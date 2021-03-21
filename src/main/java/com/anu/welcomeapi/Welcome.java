@@ -16,7 +16,7 @@ public class Welcome {
 
     @GetMapping(value="/wishDetails")
     public String getWish(@RequestParam ("uname") String userName) {
-        return "Welcome to Rest-API" + userName;
+        return "Welcome " + userName;
     }
 
     @GetMapping(value="/date")
